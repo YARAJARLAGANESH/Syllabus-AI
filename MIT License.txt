@@ -1,0 +1,26 @@
+# Syllabus AI
+
+Syllabus AI is a multi-agent system designed to convert raw or unstructured
+college syllabus text into a clean, structured, chapter-wise academic syllabus.
+
+The system uses three custom agents:
+- **Planner Agent** – detects chapters and creates task plan.
+- **Worker Agent** – generates summaries, learning objectives, subtopics, MCQs, and resources using a pluggable LLM (stub or real).
+- **Evaluator Agent** – rates output quality and flags issues.
+
+The provided notebook `updated_multi_agent_syllabus_generator.ipynb` builds the
+entire project structure, runs the agent pipeline, and supports upgrading to any
+LLM provider. It outputs JSON results and allows exporting clean human-readable
+PDF syllabus reports.
+
+### Features
+- Modular multi-agent architecture  
+- LLM-pluggable Worker (stub + real provider ready)  
+- Automatic chapter detection  
+- Summary / Objectives / Subtopics / MCQs generation  
+- Evaluation scoring  
+- PDF export  
+- Clean folder architecture for production upgrades  
+
+This project serves as a foundation for building AI-powered academic tools,
+automated curriculum processors, and college learning-assist platforms.
